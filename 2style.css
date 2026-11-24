@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1026;
+    color: #e8ecf5;
+    line-height: 1.6;
+}
+
+header {
+    background: #141a3a;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #2a3566;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: #9db4ff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background: #2a3566;
+}
+
+nav a.active {
+    background: #3a4a8a;
+    color: #fff;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    color: #ffd56b;
+    margin-bottom: 10px;
+}
+
+/* Таймлайн */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stage {
+    background: #141a3a;
+    padding: 20px;
+    border-left: 4px solid #4a6bff;
+    border-radius: 6px;
+    position: relative;
+}
+
+.stage-num {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #4a6bff;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.stage h3 {
+    color: #ffd56b;
+    margin-bottom: 5px;
+}
+
+.time {
+    color: #9db4ff;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Солнце */
+.sun-card {
+    display: flex;
+    gap: 20px;
+    background: #1a1f45;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #2a3566;
+}
+
+.sun-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.sun-card h3 {
+    color: #ffd56b;
+    margin-bottom: 10px;
+}
+
+.sun-card p {
+    margin-bottom: 6px;
+}
+
+/* Планеты */
+.section-title {
+    color: #ffd56b;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.planets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.planet {
+    background: #141a3a;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #2a3566;
+}
+
+.planet img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.planet h3 {
+    color: #ffd56b;
+    margin-bottom: 8px;
+}
+
+.planet p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.planet em {
+    color: #9db4ff;
+    font-size: 0.8rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #6b7aa8;
+    font-size: 0.9rem;
+    border-top: 1px solid #2a3566;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .sun-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .sun-card p { text-align: center; }
+}
